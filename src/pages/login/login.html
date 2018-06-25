@@ -1,0 +1,46 @@
+<ion-content padding class="themelogin_background">
+  <div class="c_login_center">
+    <div class="c_login_logo">
+      <img src="assets/img/login_logo.png">
+    </div>
+    <div class="c_row textCenter">
+      <h5>Login</h5>
+      <hr>
+    </div>
+    <div class="c_row">
+      <input class ="c_sign_input textCenter c_user" [(ngModel)]="username" placeholder="Username">
+    </div>
+    <div class="c_row">
+        <input type="password" class ="c_sign_input textCenter c_password" [(ngModel)]="password" placeholder="Password">
+    </div>
+    <div class="c_row">
+      <div class="c_check">
+        <input class="c_checkbox" id="c_label" type="checkbox" value="value2">
+        <label for="c_label"><p>Remember me</p></label>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="c_row textCenter">
+      <button ion-button class="c_login_button" (click)="home()">Login</button>
+    </div>
+    <div class="c_row textCenter">
+      <div class="c_check">
+        <p (click)="forgot()">Forgot Password</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <div class="c_row textCenter">
+    <!-- <div class="c_social">
+      <ul>
+        <li><img src="assets/img/facebook.png"></li>
+        <li><img src="assets/img/gmail.png"></li>
+        <li><img src="assets/img/linkedin.png"></li>
+      </ul>
+    </div> -->
+    <div class="c_check">
+      <p class="textWhite">New to tryment ?<strong (click)="register()">&nbsp;Register here</strong></p>
+    </div>
+  </div>
+</ion-footer>

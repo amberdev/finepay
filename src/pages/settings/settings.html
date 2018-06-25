@@ -1,0 +1,191 @@
+<ion-header class="nav_home_header themedark">
+   <div class="nav_top_header">
+      <button ion-button class="nav_btn nav_menu floatLeft" menuToggle></button>
+      <div class="nav_header_title floatLeft">
+         Settings
+      </div>
+      <div class="clear"></div>
+   </div>
+</ion-header>
+<ion-content padding class="theme_background">
+   <div class="c_sign_form p0">
+      <div class="c_row">
+         <p>Syn with server</p>
+         <select class ="c_sign_input c_select_drop">
+            <option>Yes</option>
+            <option>No</option>
+         </select>
+      </div>
+      <div class="c_row">
+         <p>Notifications</p>
+         <select class ="c_sign_input c_select_drop">
+            <option>Yes</option>
+            <option>No</option>
+         </select>
+      </div>
+      <div class="c_row">
+         <p>Location Access</p>
+         <select class ="c_sign_input c_select_drop">
+            <option>Yes</option>
+            <option>No</option>
+         </select>
+      </div>
+      <div class="c_row">
+         <p>Language</p>
+         <select class ="c_sign_input c_select_drop">
+            <option>Yes</option>
+            <option>No</option>
+         </select>
+      </div>
+      <div class="c_row">
+         <p>Backup Type</p>
+         <ion-list radio-group ng-model="choice">
+            <div class="c_gender">
+               <label>
+                  <ion-radio ng-value="'a'"></ion-radio>
+                  <strong>Incremental</strong>
+               </label>
+            </div>
+            <div class="c_gender">
+               <label>
+                  <ion-radio  ng-value="'b'"></ion-radio>
+                  <strong>Full refresh</strong>
+               </label>
+            </div>
+            <div class="clear"></div>
+         </ion-list>
+      </div>
+      <div class="c_row">
+         <select class ="c_sign_input c_select_drop">
+            <option value="" disabled selected>Time Interval</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+         </select>
+      </div>
+      <div class="c_row">
+         <ion-grid class="p0">
+            <ion-row class="p0">
+               <ion-col col-10 class="p0">
+                  <select class ="c_sign_input c_select_drop">
+                     <option value="" disabled selected>Loan Type</option>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                  </select>
+               </ion-col>
+               <ion-col col-2 class="p0">
+                  <div class="c_add_btn"><span>+</span></div>
+               </ion-col>
+            </ion-row>
+         </ion-grid>
+      </div>
+      <div class="c_loan_set">
+         <strong class="p0">Loan Settings</strong>
+      </div>
+      <div class="clear"></div>
+      <div class="c_report_tab">
+         <ul>
+            <li (click)="radio_tab(1)" [class.active]="radio_type== 1">Monthly loan Settings</li>
+            <li (click)="radio_tab(2)" [class.active]="radio_type== 2">Weekly loan Settings</li>
+            <li (click)="radio_tab(3)" [class.active]="radio_type== 3">Adjustment loan Settings</li>
+            <li (click)="radio_tab(4)" [class.active]="radio_type== 4">Daily loan Settings</li>
+            <li (click)="radio_tab(5)" [class.active]="radio_type== 5">Gold loan Settings</li>
+         </ul>
+      </div>
+      <hr>
+      <div class="c_loan_set_type">
+         <div id="" [hidden]="radio_type != 1">
+            <p><strong>Monthly Loan Settings</strong></p>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Amount">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Interest Rate">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Installment in a month">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Down payment">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Processing fee">
+            </div>
+         </div>
+         <div id="" [hidden]="radio_type != 2">
+            <p><strong>Weekly Loan Settings</strong></p>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Amount">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Interest Rate">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Installment in a week">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Down payment">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Processing fee">
+            </div>
+         </div>
+         <div id="" [hidden]="radio_type != 3">
+            <p><strong>Adjustment Loan Settings</strong></p>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Amount">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Interest Rate">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Installment in a days">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Down payment">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Processing fee">
+            </div>
+         </div>
+         <div id="" [hidden]="radio_type != 4">
+            <p><strong>Daily Loan Settings</strong></p>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Amount">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Interest Rate">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Installment in a days">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Down payment">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Processing fee">
+            </div>
+         </div>
+         <div id="" [hidden]="radio_type != 5">
+            <p><strong>Gold Loan Settings</strong></p>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Amount">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Interest Rate">
+            </div>
+            <div class="c_row">
+               <input class ="c_sign_input" placeholder="Processing fee">
+            </div>
+         </div>
+      </div>
+      <div class="c_row">
+         <ion-grid class="p0">
+            <ion-row class="p0">
+               <ion-col col-12><button ion-button class="c_daily_btn"><span><img src="assets/img/done.png"></span><span>Submit</span></button></ion-col>
+            </ion-row>
+         </ion-grid>
+      </div>
+   </div>
+</ion-content>

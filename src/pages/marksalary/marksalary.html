@@ -1,0 +1,231 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_back floatLeft" (click)="goBack()"></button>
+    <div class="nav_header_title floatLeft">
+      Mark Salary
+    </div>
+    <button ion-button class="nav_btn nav_filter floatRight" (click)="salaryfilter()">
+    </button>
+    <div class="clear"></div>
+  </div>
+  <div class="c_search_div">
+    <input class="c_search_input" placeholder="Search here">
+  </div>
+  <div class="nav_bottom_header">
+    <div class="c_select_business themelight">
+      <div class="c_salary_tab">
+        <ul>
+          <li [ngClass]="{'active' : slidertab == 0}" (click)="goToSlide(0)"><span><img src="assets/img/owner.png"></span><span class="menu">Owner</span></li>
+          <li [ngClass]="{'active' : slidertab == 1}" (click)="goToSlide(1)"><span><img src="assets/img/partner.png"></span><span class="menu">Partner</span></li>
+          <li [ngClass]="{'active' : slidertab == 2}" (click)="goToSlide(2)"><span><img src="assets/img/agent.png"></span><span class="menu">Agent</span></li>
+          <div class="clearfix"></div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ion-header>
+
+
+<ion-content class="theme_background">
+    <ion-slides pager="false" #mySlider (ionSlideDidChange)="slideChanged()">
+      <ion-slide>
+        <div class="c_business_listing">
+          <ul>
+            <li class="bg_none" (click)="owner()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic1.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Mishel Marcus</h5>
+                <h6>UI34675</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="owner()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic2.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Elsa Robertson</h5>
+                <h6>KOLK2425</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="owner()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic3.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Tony Mathew Morgan</h5>
+                <h6>ER46578</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="owner()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic1.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Mishel Marcus</h5>
+                <h6>BH3596</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="owner()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic2.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Elsa Robertson</h5>
+                <h6>VYU4689</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="owner()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic3.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Tony Mathew Morgan</h5>
+                <h6>LJD3435</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+          </ul>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="c_business_listing">
+          <ul>
+            <li class="bg_none" (click)="partner()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic1.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Mishel Marcus</h5>
+                <h6>UI34675</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="partner()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic2.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Elsa Robertson</h5>
+                <h6>KOLK2425</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="partner()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic3.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Tony Mathew Morgan</h5>
+                <h6>ER46578</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="partner()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic1.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Mishel Marcus</h5>
+                <h6>BH3596</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="partner()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic2.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Elsa Robertson</h5>
+                <h6>VYU4689</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="partner()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic3.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Tony Mathew Morgan</h5>
+                <h6>LJD3435</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+          </ul>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="c_business_listing">
+          <ul>
+            <li class="bg_none" (click)="agents()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic1.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Mishel Marcus</h5>
+                <h6>UI34675</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="agents()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic2.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Elsa Robertson</h5>
+                <h6>KOLK2425</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="agents()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic3.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Tony Mathew Morgan</h5>
+                <h6>ER46578</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="agents()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic1.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Mishel Marcus</h5>
+                <h6>BH3596</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="agents()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic2.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Elsa Robertson</h5>
+                <h6>VYU4689</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li class="bg_none" (click)="agents()">
+              <div class="c_list_circle">
+                <img src="assets/img/pic3.png">
+              </div>
+              <div class="c_list_details relative top10 textLeft">
+                <h5>Tony Mathew Morgan</h5>
+                <h6>LJD3435</h6>
+              </div>
+              <div class="clear"></div>
+            </li>
+          </ul>
+        </div>
+      </ion-slide>
+
+    </ion-slides>
+</ion-content>

@@ -1,0 +1,71 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_menu floatLeft" menuToggle></button>
+    <div class="nav_header_title floatLeft">
+      New loan
+    </div>
+    <button ion-button class="nav_btn floatRight" (click)="newloanPopover($event)">
+      new&nbsp;<strong>+</strong>
+    </button>
+    <div class="clear"></div>
+  </div>
+  <div class="c_search_div">
+    <input class="c_search_input" placeholder="Search here">
+  </div>
+  <div class="nav_bottom_header">
+    <div class="c_select_business themelight">
+      <select class="c_select_input">
+        <option>Loan type</option>
+      </select>
+    </div>
+  </div>
+</ion-header>
+<ion-content class="theme_background">
+  <div class="c_business_listing">
+    <ul>
+      <li class="bg_none">
+        <div class="c_list_circle">
+          <img src="assets/img/pic1.png">
+        </div>
+        <div class="c_list_details relative top10">
+          <h5>Mishel Marcus</h5>
+          <h6>10,0000</h6>
+        </div>
+        <div class="c_list_duration relative top10">
+          <h5>02 Years</h5>
+          <p>Loan type</p>
+        </div>
+        <div class="clear"></div>
+      </li>
+      <li class="bg_none">
+        <div class="c_list_circle">
+          <img src="assets/img/pic2.png">
+        </div>
+        <div class="c_list_details relative top10">
+          <h5>Elsa Robertson</h5>
+          <h6>5000</h6>
+        </div>
+        <div class="c_list_duration relative top10">
+          <h5>03 Years</h5>
+          <p>Loan type</p>
+        </div>
+        <div class="clear"></div>
+      </li>
+      <li class="bg_none">
+        <div class="c_list_circle">
+          <img src="assets/img/pic3.png">
+        </div>
+        <div class="c_list_details relative top10">
+          <h5>Tony Mathew Morgan</h5>
+          <h6>50,000</h6>
+        </div>
+        <div class="c_list_duration relative top10">
+          <h5>01 Years</h5>
+          <p>Loan type</p>
+        </div>
+        <div class="clear"></div>
+      </li>
+    </ul>
+  </div>
+
+</ion-content>

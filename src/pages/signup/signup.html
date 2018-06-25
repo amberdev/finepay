@@ -1,0 +1,98 @@
+<ion-content padding class="theme_background">
+   <div class="c_sign_wrap">
+      <div class="c_reg_banner">
+         <img src="assets/img/register.png">
+         <h3>Registration</h3>
+         <p>Please enter details below</p>
+      </div>
+      <div class="c_sign_form">
+         <div class="c_row">
+            <input class ="c_sign_input" placeholder="Aadhar Number">
+         </div>
+         <div class="c_row">
+            <input class ="c_sign_input" placeholder="PAN Number">
+         </div>
+         <div class="c_row">
+            <input class ="c_sign_input" placeholder="First Name">
+         </div>
+         <div class="c_row">
+            <input class ="c_sign_input" placeholder="Last Name">
+         </div>
+         <div class="c_row">
+            <ion-item class="c_sign_input c_calender pl0">
+               <ion-datetime placeholder="Date of Birth"  displayFormat="MMM DD YYYY" 
+               [(ngModel)]="event.month"></ion-datetime>
+            </ion-item>
+         </div>
+
+         <div class="c_row">
+            <ion-list radio-group ng-model="gender">   
+               <div class="c_gender">
+                  <label>
+                     <ion-radio  ng-value="'male'"></ion-radio>
+                     <strong>Male</strong>
+                  </label> 
+               </div>
+
+               <div class="c_gender">
+                  <label>
+                     <ion-radio ng-value="'female'"></ion-radio>
+                     <strong>Female</strong>
+                  </label>
+               </div>
+               <div class="clear"></div>
+            </ion-list>
+         </div>
+
+         <div class="c_row">
+            <ion-grid class="p0">
+               <ion-row class="p0">
+                  <ion-col col-10 class="p0">
+                     <input class ="c_sign_input" placeholder="Mobile number">
+                  </ion-col>
+                  <ion-col col-2 class="p0">
+                     <div class="c_add_btn"><span>+</span></div>
+                  </ion-col>
+               </ion-row>
+            </ion-grid>
+         </div>
+
+         <div class="c_row">
+            <ion-grid class="p0">
+               <ion-row class="p0">
+                  <ion-col col-10 class="p0">
+                     <input class ="c_sign_input" placeholder="Email">
+                  </ion-col>
+                  <ion-col col-2 class="p0">
+                     <div class="c_add_btn"><span>+</span></div>
+                  </ion-col>
+               </ion-row>
+            </ion-grid>
+         </div>
+
+         <div class="c_row">
+            <input class ="c_sign_input" placeholder="User Name">
+         </div>
+         <div class="c_row">
+            <input class ="c_sign_input" placeholder="Password">
+         </div>
+         <div class="c_row">
+            <input class ="c_sign_input" placeholder="Confirm Password">
+         </div>
+         <div class="c_row">
+            <div class="c_check">
+               <input class="c_checkbox" id="c_label" type="checkbox" value="value2">
+               <label for="c_label">
+                  <p>I Agree to the Terms & Conditions and
+                     Privacy Policy
+                  </p>
+               </label>
+               <div class="clear"></div>
+            </div>
+         </div>
+         <div class="c_row">
+            <button ion-button class="c_register_button" (click)="login()">Register</button>
+         </div>
+      </div>
+   </div>
+</ion-content>

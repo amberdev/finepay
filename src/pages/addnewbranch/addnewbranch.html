@@ -1,0 +1,48 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_back floatLeft" (click)="goBack()"></button>
+    <div class="nav_header_title floatLeft">
+      Add new branch
+    </div>
+    <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content padding class="theme_background">
+  <div class="c_sign_form">
+    <div class="c_row">
+      <select class ="c_sign_input c_select_drop">
+        <option>Business name</option>
+      </select>
+    </div>
+    <div class="c_row">
+      <input class ="c_sign_input" placeholder="Branch name">
+    </div>
+    <div class="c_row">
+      <input class ="c_sign_input" placeholder="Short name">
+    </div>
+    <div class="c_row">
+      <ion-item class="c_sign_input c_calender" style="padding-left:0px;" >
+         <ion-datetime placeholder="Start Date"  displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+       </ion-item>
+    </div>
+    <div class="c_row">
+      <ion-item class="c_sign_input c_calender" style="padding-left:0px;" >
+         <ion-datetime placeholder="End Date"  displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+       </ion-item>
+    </div>
+    <div class="c_row">
+      <input class ="c_sign_input" placeholder="Address">
+    </div>
+    <div class="c_row">
+      <select class ="c_sign_input c_select_drop">
+        <option>Status</option>
+      </select>
+    </div>
+    <div class="c_row">
+    <ion-row class="p0">
+      <ion-col col-12><button ion-button class="c_daily_btn"><span><img src="assets/img/create.png"></span><span>Create</span></button></ion-col>
+    </ion-row>
+    </div>
+  </div>
+
+</ion-content>

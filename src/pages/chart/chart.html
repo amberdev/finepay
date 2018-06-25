@@ -1,0 +1,286 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_menu floatLeft" menuToggle></button>
+    <div class="nav_header_title floatLeft">
+      Organization Chart
+    </div>
+    <!-- <button ion-button class="nav_btn nav_filter floatRight" >
+    </button> -->
+    <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content class="theme_background">
+  <div class="c_chart_wrap">
+    <ion-scroll scrollX="true" style="width:400px;">
+      <div class="c_tree">
+        <ul class="chart_parent">
+            <li>
+                <div class="chart_business">
+                  <span>
+                    <div class="circle" (click)="toggleGroup(0)" [ngClass]="{active: isGroupShown(0)}"><span class="expand">+</span><span class="collapse">-</span></div>
+                    <div class="bar">Business 1
+                      <div class="c_more_filter" (click)="chartfilter()"></div>
+                    </div>
+                    <div class="clear"></div>
+                  </span>
+                </div>
+                <ul *ngIf="isGroupShown(0)">
+                  <li>
+                      <div class="chart_branch">
+                      <span>
+                        <div class="circle" (click)="toggleChild1(0)" [ngClass]="{active: isChild1Shown(0)}"><span class="expand">+</span><span class="collapse">-</span></div>
+                        <div class="bar">Branches 1
+                          <div class="c_more_filter" (click)="chartfilter()"></div>
+                        </div>
+                        <div class="clear"></div>
+                      </span>
+                      </div>
+                        <ul class="chart_child2" *ngIf="isChild1Shown(0)">
+                            <li>
+                              <div class="chart_line">
+                                <span>
+                                  <div class="circle"><span>+</span></div>
+                                  <div class="bar">New lines
+                                  <div class="c_more_filter" (click)="chartfilter()"></div></div>
+                                  <div class="clear"></div>
+                                </span>
+                              </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                      <div class="chart_branch">
+                      <span>
+                        <div class="circle" (click)="toggleChild1(1)" [ngClass]="{active: isChild1Shown(1)}"><span class="expand">+</span><span class="collapse">-</span></div>
+                        <div class="bar">Branches 2
+                          <div class="c_more_filter" (click)="chartfilter()"></div>
+                        </div>
+                        <div class="clear"></div>
+                      </span>
+                      </div>
+                        <ul class="chart_child2" *ngIf="isChild1Shown(1)">
+                            <li>
+                              <div class="chart_line">
+                                <span>
+                                  <div class="circle"><span>+</span></div>
+                                  <div class="bar">New lines 1
+                                  <div class="c_more_filter" (click)="chartfilter()"></div>
+                                </div>
+                                  <div class="clear"></div>
+                                </span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="chart_line">
+                                <span>
+                                  <div class="circle"><span>+</span></div>
+                                  <div class="bar">New lines 2
+                                  <div class="c_more_filter" (click)="chartfilter()"></div></div>
+                                  <div class="clear"></div>
+                                </span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="chart_line">
+                                <span>
+                                  <div class="circle"><span>+</span></div>
+                                  <div class="bar">New lines 3
+                                  <div class="c_more_filter" (click)="chartfilter()"></div></div>
+                                  <div class="clear"></div>
+                                </span>
+                              </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+              <div class="chart_business">
+                <span>
+                  <div class="circle" (click)="toggleGroup(1)" [ngClass]="{active: isGroupShown(1)}"><span class="expand">+</span><span class="collapse">-</span></div>
+                  <div class="bar">Business 2
+                    <div class="c_more_filter" (click)="chartfilter()"></div>
+                  </div>
+                  <div class="clear"></div>
+                </span>
+              </div>
+                <ul class="chart_child1" *ngIf="isGroupShown(1)">
+                  <li>
+                      <div class="chart_branch">
+                      <span>
+                        <div class="circle"><span>+</span></div>
+                        <div class="bar">Branches 1
+                          <div class="c_more_filter" (click)="chartfilter()"></div>
+                        </div>
+                        <div class="clear"></div>
+                      </span>
+                      </div>
+                </li>
+            </ul>
+            </li>
+            <li>
+                <div class="chart_business">
+                  <span>
+                    <div class="circle" (click)="toggleGroup(2)" [ngClass]="{active: isGroupShown(2)}"><span class="expand">+</span><span class="collapse">-</span></div>
+                    <div class="bar">Business 3
+                      <div class="c_more_filter" (click)="chartfilter()"></div>
+                    </div>
+                    <div class="clear"></div>
+                  </span>
+                </div>
+                <ul *ngIf="isGroupShown(2)">
+                  <li>
+                      <div class="chart_branch">
+                      <span>
+                        <div class="circle" (click)="toggleChild1(0)" [ngClass]="{active: isChild1Shown(0)}"><span class="expand">+</span><span class="collapse">-</span></div>
+                        <div class="bar">Branches 1
+                          <div class="c_more_filter" (click)="chartfilter()"></div>
+                        </div>
+                        <div class="clear"></div>
+                      </span>
+                      </div>
+                        <ul class="chart_child2" *ngIf="isChild1Shown(0)">
+                            <li>
+                              <div class="chart_line">
+                                <span>
+                                  <div class="circle"><span>+</span></div>
+                                  <div class="bar">New lines
+                                  <div class="c_more_filter" (click)="chartfilter()"></div></div>
+                                  <div class="clear"></div>
+                                </span>
+                              </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                      <div class="chart_branch">
+                      <span>
+                        <div class="circle" (click)="toggleChild1(1)" [ngClass]="{active: isChild1Shown(1)}"><span class="expand">+</span><span class="collapse">-</span></div>
+                        <div class="bar">Branches 2
+                          <div class="c_more_filter" (click)="chartfilter()"></div>
+                        </div>
+                        <div class="clear"></div>
+                      </span>
+                      </div>
+                        <ul class="chart_child2" *ngIf="isChild1Shown(1)">
+                            <li>
+                              <div class="chart_line">
+                                <span>
+                                  <div class="circle"><span>+</span></div>
+                                  <div class="bar">New lines 1
+                                  <div class="c_more_filter" (click)="chartfilter()"></div>
+                                </div>
+                                  <div class="clear"></div>
+                                </span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="chart_line">
+                                <span>
+                                  <div class="circle"><span>+</span></div>
+                                  <div class="bar">New lines 2
+                                  <div class="c_more_filter" (click)="chartfilter()"></div></div>
+                                  <div class="clear"></div>
+                                </span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="chart_line">
+                                <span>
+                                  <div class="circle"><span>+</span></div>
+                                  <div class="bar">New lines 3
+                                  <div class="c_more_filter" (click)="chartfilter()"></div></div>
+                                  <div class="clear"></div>
+                                </span>
+                              </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="chart_business">
+                  <span>
+                    <div class="circle" (click)="toggleGroup(3)" [ngClass]="{active: isGroupShown(3)}"><span class="expand">+</span><span class="collapse">-</span></div>
+                    <div class="bar">Business 4
+                      <div class="c_more_filter" (click)="chartfilter()"></div>
+                    </div>
+                    <div class="clear"></div>
+                  </span>
+                </div>
+                <ul *ngIf="isGroupShown(3)">
+                  <li>
+                      <div class="chart_branch">
+                      <span>
+                        <div class="circle" (click)="toggleChild1(0)" [ngClass]="{active: isChild1Shown(0)}"><span class="expand">+</span><span class="collapse">-</span></div>
+                        <div class="bar">Branches 1
+                          <div class="c_more_filter" (click)="chartfilter()"></div>
+                        </div>
+                        <div class="clear"></div>
+                      </span>
+                      </div>
+                        <ul class="chart_child2" *ngIf="isChild1Shown(0)">
+                            <li>
+                              <div class="chart_line">
+                                <span>
+                                  <div class="circle"><span>+</span></div>
+                                  <div class="bar">New lines
+                                  <div class="c_more_filter" (click)="chartfilter()"></div></div>
+                                  <div class="clear"></div>
+                                </span>
+                              </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                      <div class="chart_branch">
+                      <span>
+                        <div class="circle" (click)="toggleChild1(1)" [ngClass]="{active: isChild1Shown(1)}"><span class="expand">+</span><span class="collapse">-</span></div>
+                        <div class="bar">Branches 2
+                          <div class="c_more_filter" (click)="chartfilter()"></div>
+                        </div>
+                        <div class="clear"></div>
+                      </span>
+                      </div>
+                        <ul class="chart_child2" *ngIf="isChild1Shown(1)">
+                            <li>
+                              <div class="chart_line">
+                                <span>
+                                  <div class="circle"><span>+</span></div>
+                                  <div class="bar">New lines 1
+                                  <div class="c_more_filter" (click)="chartfilter()"></div>
+                                </div>
+                                  <div class="clear"></div>
+                                </span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="chart_line">
+                                <span>
+                                  <div class="circle"><span>+</span></div>
+                                  <div class="bar">New lines 2
+                                  <div class="c_more_filter" (click)="chartfilter()"></div></div>
+                                  <div class="clear"></div>
+                                </span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="chart_line">
+                                <span>
+                                  <div class="circle"><span>+</span></div>
+                                  <div class="bar">New lines 3
+                                  <div class="c_more_filter" (click)="chartfilter()"></div></div>
+                                  <div class="clear"></div>
+                                </span>
+                              </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+  </ion-scroll>
+  </div>
+</ion-content>

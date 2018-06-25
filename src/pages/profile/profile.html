@@ -1,0 +1,165 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_menu floatLeft" menuToggle></button>
+    <div class="nav_header_title floatLeft">
+      Profile
+    </div>
+    <button ion-button class="nav_btn floatRight">
+      help&nbsp;<strong>?</strong>
+    </button>
+    <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content padding class="theme_background">
+  <div class="c_sign_wrap">
+    <div class="c_reg_banner">
+      <div class="c_profile_picture">
+        <div class="c_prof_pic_edit"></div>
+      </div>
+      <p>{{username}}</p>
+    </div>
+    <div class="c_sign_form">
+      <div class="c_row">
+        <input class ="c_sign_input" placeholder="First Name*" value="{{firstname}}">
+      </div>
+      <div class="c_row">
+        <input class ="c_sign_input" placeholder="Email*" value="{{email}}">
+      </div>
+      <div class="c_row">
+        <input class ="c_sign_input" placeholder="Aadhar Number">
+      </div>
+      <div class="c_row">
+        <input class ="c_sign_input" placeholder="PAN Number">
+      </div>
+      <div class="c_row">
+        <ion-item class="c_sign_input c_calender pl0">
+           <ion-datetime placeholder="Date of Birth"  displayFormat="MMM DD YYYY" 
+           [(ngModel)]="dob"></ion-datetime>
+         </ion-item>
+      </div>
+      <div class="c_row">
+      <ion-grid class="p0">
+        <ion-row class="p0">
+          <ion-col col-10 class="p0">
+            <input class ="c_sign_input" placeholder="Email">
+          </ion-col>
+          <ion-col col-2 class="p0">
+            <div class="c_add_btn"><span>+</span></div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </div>
+      <div class="c_row">
+      <ion-grid class="p0">
+        <ion-row class="p0">
+          <ion-col col-10 class="p0">
+            <input class ="c_sign_input" placeholder="Mobile Number">
+          </ion-col>
+          <ion-col col-2 class="p0">
+            <div class="c_add_btn"><span>+</span></div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </div>
+      <div class="c_row">
+      <ion-grid class="p0">
+        <ion-row class="p0">
+          <ion-col col-10 class="p0">
+            <input class ="c_sign_input" placeholder="Emergency Contact Number">
+          </ion-col>
+          <ion-col col-2 class="p0">
+            <div class="c_add_btn"><span>+</span></div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </div>
+      <div class="c_row">
+        <ion-list radio-group>
+          <div class="c_gender">
+            <label>
+              <ion-radio ng-value="'A'"></ion-radio>
+              <strong>Male</strong>
+            </label>
+          </div>
+          
+          <div class="c_gender">
+            <label>
+              <ion-radio ng-value="'B'"></ion-radio>
+              <strong>Female</strong>
+            </label>
+          </div>
+          <div class="clear"></div>
+        </ion-list>
+      </div>
+
+      <div class="c_row">
+        <input class ="c_sign_input" placeholder="User Name">
+      </div>
+      <div class="c_row">
+        <input class ="c_sign_input" placeholder="Old Password">
+      </div>
+      <div class="c_row">
+        <input class ="c_sign_input" placeholder="New Password">
+      </div>
+      <div class="c_row">
+        <input class ="c_sign_input" placeholder="Confirm New Password">
+      </div>
+
+      <div class="c_row">
+        <ion-list radio-group>
+          <div class="c_gender">
+            <label>
+              <ion-radio ng-value="'A'"></ion-radio>
+              <strong>Single</strong>
+            </label>
+          </div>
+          <div class="c_gender">
+            <label>
+              <ion-radio ng-value="'B'"></ion-radio>
+              <strong>Married</strong>
+            </label>
+          </div>
+          <div class="c_gender">
+            <label>
+              <ion-radio ng-value="'C'"></ion-radio>
+              <strong>Divorse</strong>
+            </label>
+          </div>
+          <div class="clear"></div>
+        </ion-list>
+
+      </div>
+      <div class="c_row">
+        <ion-item class="c_sign_input c_calender pl0">
+            <ion-datetime placeholder="Marriage Date"  displayFormat="MMM DD YYYY" 
+            [(ngModel)]="date"></ion-datetime>
+         </ion-item>
+      </div>
+      <div class="c_row">
+      <h4 class="m0 textThemedblue">BANK DETAILS</h4>
+      </div>
+      <div class="c_row">
+        <input class ="c_sign_input" placeholder="Account Holder Name">
+      </div>
+      <div class="c_row">
+        <input class ="c_sign_input" placeholder="Account Number">
+      </div>
+      <div class="c_row">
+        <input class ="c_sign_input" placeholder="IFSC Code">
+      </div>
+      <div class="c_row">
+        <input class ="c_sign_input" placeholder="Branch Name">
+      </div>
+      <div class="c_row">
+        <select class ="c_sign_input c_select_drop">
+          <option>Status</option>
+        </select>
+      </div>
+      <div class="c_row">
+        <button ion-button class="c_register_button">Save</button>
+      </div>
+
+    </div>
+  </div>
+
+</ion-content>

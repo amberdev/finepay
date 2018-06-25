@@ -1,0 +1,73 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_back floatLeft" (click)="dismiss()"></button>
+    <div class="nav_header_title floatLeft">
+      Select User
+    </div>
+    <button ion-button class="nav_btn floatRight" (click)="dismiss()">
+    <span><img src="assets/img/done.png"></span>
+    </button>
+    <div class="clear"></div>
+  </div>
+  <div class="c_search_div">
+    <input class="c_search_input" placeholder="Search here">
+  </div>
+</ion-header>
+
+<ion-content class="theme_background">
+  <div class="c_business_listing">
+    <ul>
+      <li class="bg_none">
+        <label>
+          <div class="c_list_circle">
+            <img src="assets/img/pic1.png">
+          </div>
+          <div class="c_list_details c_user_det">
+            <h5>Mishel Marcus</h5>
+            <h6 class="fontweight400"><span>9895913099</span>www.mishelm.com</h6>
+          </div>
+          <div class="c_select_radio">
+            <div class="c_gender">
+              <ion-radio ng-model="choice" ng-value="'A'"></ion-radio>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </label>
+      </li>
+      <li class="bg_none">
+        <label>
+          <div class="c_list_circle">
+            <img src="assets/img/pic2.png">
+          </div>
+          <div class="c_list_details c_user_det">
+            <h5>Elsa Robertson</h5>
+            <h6 class="fontweight400"><span>7034449533</span>www.allelsa.com</h6>
+          </div>
+          <div class="c_select_radio">
+            <div class="c_gender">
+              <ion-radio ng-model="choice" ng-value="'A'"></ion-radio>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </label>
+      </li>
+      <li class="bg_none">
+        <label>
+          <div class="c_list_circle">
+            <img src="assets/img/pic3.png">
+          </div>
+          <div class="c_list_details c_user_det">
+            <h5>Tony Mathew Morgan</h5>
+            <h6 class="fontweight400"><span>9961531199</span>www.tonymorgan.com</h6>
+          </div>
+          <div class="c_select_radio">
+            <div class="c_gender">
+              <ion-radio ng-model="choice" ng-value="'A'"></ion-radio>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </label>
+      </li>
+    </ul>
+  </div>
+</ion-content>

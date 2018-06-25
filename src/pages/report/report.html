@@ -1,0 +1,163 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_menu floatLeft" menuToggle></button>
+    <div class="nav_header_title floatLeft">
+      Report
+    </div>
+    <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content padding class="theme_background">
+  <div class="c_report_wrap">
+    <h4>Filter option</h4>
+    <div class="c_report_tab">
+      <ul>
+        <li (click)="radio_tab(1)" [class.active]="radio_type== 1">Date Range</li>
+        <li (click)="radio_tab(2)" [class.active]="radio_type== 2">Financial year</li>
+        <li (click)="radio_tab(3)" [class.active]="radio_type== 3">Month Wise</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="c_report_tab_content">
+      <div id="" [hidden]="radio_type != 1">
+        <div class="c_sign_form">
+          <div class="c_row">
+            <ion-item class="c_sign_input c_calender pl0">
+              <ion-datetime placeholder="Start Date"  displayFormat="MMM DD YYYY" 
+               [(ngModel)]="startDate"></ion-datetime>
+            </ion-item>
+          </div>
+          <div class="c_row">
+            <ion-item class="c_sign_input c_calender pl0">
+              <ion-datetime placeholder="End Date"  displayFormat="MMM DD YYYY" 
+              [(ngModel)]="endDate"></ion-datetime>
+            </ion-item>
+          </div>
+
+          <div class="c_row">
+            <select class ="c_sign_input c_select_drop">
+              <option disabled="true" value="">Report Type</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+          </div>
+          <div class="c_row">
+            <select class ="c_sign_input c_select_drop">
+              <option disabled="true" value="">File Type</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+          </div>
+          <div class="c_row">
+            <ion-row class="p0">
+              <ion-col col-12>
+                <button ion-button class="c_daily_btn">
+                  <span><img src="assets/img/download.png"></span>
+                  <span>Download</span>
+                </button>
+              </ion-col>
+            </ion-row>
+          </div>
+        </div>
+      </div>
+
+      <div id="" [hidden]="radio_type != 2">
+        <div class="c_sign_form">
+          <ion-list  radio-group ng-model="month">
+            <div class="c_row">
+              <div class="c_period">
+                <label>  
+                  <ion-radio ng-value="'A'"></ion-radio>
+                  <strong>July 2016 - June 2017</strong>
+                </label>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="c_row">
+              <div class="c_period">
+                <label>  
+                  <ion-radio ng-value="'B'"></ion-radio>
+                  <strong>July 2015 - June 2016</strong>
+                </label> 
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="c_row">
+              <div class="c_period">
+                <label>  
+                  <ion-radio ng-value="'C'"></ion-radio>
+                  <strong>July 2014 - June 2015</strong>
+                </label>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </ion-list>
+
+          <div class="c_row">
+            <select class ="c_sign_input c_select_drop">
+              <option disabled="true" value="">Report Type</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+          </div>
+
+          <div class="c_row">
+            <select class ="c_sign_input c_select_drop">
+              <option disabled="true" value="">File Type</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+          </div>
+
+          <div class="c_row">
+            <ion-row class="p0">
+              <ion-col col-12>
+                <button ion-button class="c_daily_btn">
+                  <span><img src="assets/img/download.png"></span>
+                  <span>Download</span>
+                </button>
+              </ion-col>
+            </ion-row>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="" [hidden]="radio_type != 3">
+        <div class="c_sign_form">
+          <div class="c_row">
+            <ion-item class="c_sign_input c_calender pl0">
+               <ion-datetime placeholder="Start Date"  displayFormat="MMM DD YYYY" 
+               [(ngModel)]="event.month"></ion-datetime>
+             </ion-item>
+          </div>
+          <div class="c_row">
+            <select class ="c_sign_input c_select_drop">
+              <option disabled="true" value="">Report Type</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+          </div>
+          <div class="c_row">
+            <select class ="c_sign_input c_select_drop">
+              <option disabled="true" value="">File Type</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+          </div>
+          <div class="c_row">
+          <ion-row class="p0">
+            <ion-col col-12><button ion-button class="c_daily_btn"><span><img src="assets/img/download.png"></span><span>Download</span></button></ion-col>
+          </ion-row>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

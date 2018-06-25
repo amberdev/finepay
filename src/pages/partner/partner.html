@@ -1,0 +1,69 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_back floatLeft" (click)="goBack()"></button>
+    <div class="nav_header_title floatLeft">
+      Partner
+    </div>
+    <button ion-button class="nav_btn floatRight">
+    </button>
+    <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content padding class="theme_background">
+  <div class="c_business_listing">
+    <ul>
+      <li class="bg_none">
+        <div class="c_list_circle">
+          <img src="assets/img/pic1.png">
+        </div>
+        <div class="c_list_details relative top10 textLeft">
+          <h5>Mishel Marcus</h5>
+          <h6>UI34675</h6>
+        </div>
+        <div class="clear"></div>
+      </li>
+    </ul>
+  </div>
+  <div class="c_sign_form p0">
+    <div class="c_row">
+      <select class ="c_sign_input c_select_drop">
+        <option>Select Business</option>
+      </select>
+    </div>
+    <div class="c_row">
+      <select class ="c_sign_input c_select_drop">
+        <option>Select Branch</option>
+      </select>
+    </div>
+    <div class="c_row">
+      <ion-item class="c_sign_input c_calender" style="padding-left:0px;" >
+         <ion-datetime placeholder="Start Date"  displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+       </ion-item>
+    </div>
+    <div class="c_row">
+      <ion-item class="c_sign_input c_calender" style="padding-left:0px;" >
+         <ion-datetime placeholder="End Date"  displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+       </ion-item>
+    </div>
+    <div class="c_row">
+      <input class ="c_sign_input" placeholder="Amount">
+    </div>
+    <div class="c_row">
+      <select class ="c_sign_input c_select_drop">
+        <option>Payment Method</option>
+      </select>
+    </div>
+    <div class="c_row">
+        <textarea class ="c_sign_input" style="height: 120px !important;" placeholder="Comments" rows="4">
+        </textarea>
+    </div>
+    <div class="c_row">
+      <ion-grid class="p0">
+        <ion-row class="p0">
+          <ion-col col-6><button ion-button class="c_deny_btn"><span><img src="assets/img/close.png"></span><span>Cancel</span></button></ion-col>
+          <ion-col col-6><button ion-button class="c_daily_btn"><span><img src="assets/img/done.png"></span><span>Save</span></button></ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

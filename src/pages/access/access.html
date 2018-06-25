@@ -1,0 +1,106 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_back floatLeft" (click)="goBack()"></button>
+    <div class="nav_header_title floatLeft">
+      Access
+    </div>
+    <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content padding class="theme_background">
+    <div class="c_sign_form">
+      <div class="c_row">
+      <ion-grid class="p0">
+        <ion-row class="p0">
+          <ion-col col-10 class="p0">
+            <input class ="c_sign_input c_daily_user" placeholder="User">
+          </ion-col>
+          <ion-col col-2 class="p0">
+            <div class="c_add_btn"><span><img src="assets/img/click_arrow.png"></span></div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </div>
+    </div>
+    <div class="c_report_wrap">
+    <h4>Role Type</h4>
+    <div class="c_report_tab">
+      <ul>
+        <li (click)="radio_tab(1)" [class.active]="radio_type== 1">Agent</li>
+        <li (click)="radio_tab(2)" [class.active]="radio_type== 2">Branch Partner</li>
+        <li (click)="radio_tab(3)" [class.active]="radio_type== 3">Line Partner</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="c_report_tab_content">
+      <div id="" [hidden]="radio_type != 1">
+          <div class="c_sign_form">
+            <div class="c_row">
+              <select class ="c_sign_input c_select_drop">
+                <option>Business</option>
+              </select>
+            </div>
+            <div class="c_row">
+              <select class ="c_sign_input c_select_drop">
+                <option>Branch</option>
+              </select>
+            </div>
+            <div class="c_row">
+              <select class ="c_sign_input c_select_drop">
+                <option>Line</option>
+              </select>
+            </div>
+            <div class="c_row">
+            <ion-row class="p0">
+              <ion-col col-12><button ion-button class="c_daily_btn">Save</button></ion-col>
+            </ion-row>
+            </div>
+          </div>
+      </div>
+      <div id="" [hidden]="radio_type != 2">
+        <div class="c_sign_form">
+          <div class="c_row">
+            <select class ="c_sign_input c_select_drop">
+              <option>Business</option>
+            </select>
+          </div>
+          <div class="c_row">
+            <select class ="c_sign_input c_select_drop">
+              <option>Branch</option>
+            </select>
+          </div>
+          <div class="c_row">
+          <ion-row class="p0">
+            <ion-col col-12><button ion-button class="c_daily_btn">Save</button></ion-col>
+          </ion-row>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="" [hidden]="radio_type != 3">
+        <div class="c_sign_form">
+          <div class="c_row">
+            <select class ="c_sign_input c_select_drop">
+              <option>Business</option>
+            </select>
+          </div>
+          <div class="c_row">
+            <select class ="c_sign_input c_select_drop">
+              <option>Branch</option>
+            </select>
+          </div>
+          <div class="c_row">
+            <select class ="c_sign_input c_select_drop">
+              <option>Line</option>
+            </select>
+          </div>
+          <div class="c_row">
+          <ion-row class="p0">
+            <ion-col col-12><button ion-button class="c_daily_btn">Save</button></ion-col>
+          </ion-row>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</ion-content>

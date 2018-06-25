@@ -1,0 +1,28 @@
+<ion-menu [content]="content">
+  <ion-content>
+    <div class="c_sidemenu_wrapper">
+      <div menuClose class="c_sidemenu_top" (click)="myprofile()">
+        <div class="c_profile_pic">
+          <!-- <img src="http://localhost:8888/{{profile_pic}}"> -->
+        </div>
+        <h5>{{username}}</h5>
+        <p>{{email}}</p>
+      </div>
+      <div class="c_sidemenu_list">
+        <ul>
+          <li menuClose (click)="home()">Home</li>
+          <li menuClose (click)="notification()">Notification</li>
+          <li menuClose (click)="newloan()">New Loan</li>
+          <li menuClose (click)="myloan()">My Loan</li>
+          <li menuClose (click)="report()">Report</li>
+          <li menuClose (click)="settings()">Settings</li>
+          <li menuClose (click)="logout()">Logout</li>
+        </ul>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

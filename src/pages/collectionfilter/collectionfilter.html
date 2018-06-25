@@ -1,0 +1,23 @@
+<ion-content  class="c_popup_bg">
+  <div class="c_salary_filter" (click)="dismiss()">
+    <div class="c_salary_filter_body">
+      <div class="c_sign_form">
+      <div class="c_row">
+        <select class ="c_sign_input c_select_drop">
+          <option>All Type</option>
+        </select>
+      </div>
+      <div class="c_row">
+        <select class ="c_sign_input c_select_drop">
+          <option>All line</option>
+        </select>
+      </div>
+      <div class="c_row">
+        <ion-item class="c_sign_input c_calender" style="padding-left:0px;" >
+           <ion-datetime placeholder="Date of Birth"  displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+         </ion-item>
+      </div>
+    </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,129 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_back floatLeft" (click)="goBack()"></button>
+    <div class="nav_header_title floatLeft">
+    Branch A line A
+    </div>
+    <button ion-button class="nav_btn floatRight" (click)="agentpopover($event)">
+      new&nbsp;<strong>+</strong>
+    </button>
+    <div class="clear"></div>
+  </div>
+</ion-header>
+
+<ion-content class="theme_background">
+
+  <div class="c_new_branch">
+    <ul>
+      <li>
+        <div class="c_branch_overview" (click)="toggleGroup(0)" [ngClass]="{active: isGroupShown(0)}">
+          <div class="c_list_circle">
+            <img src="assets/img/pic1.png">
+          </div>
+          <div class="c_list_details relative top10">
+            <h5>Mishel Marcus</h5>
+            <h6 class="fontweight400">michelm@hotmail.com</h6>
+          </div>
+          <div class="child3 floatRight">
+            <div class="c_collpase_btn agent_collapse">
+
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="c_branch_details" *ngIf="isGroupShown(0)">
+          <li>
+            <div class="child1 floatLeft">
+              <p>Address</p>
+            </div>
+            <div class="child2 floatLeft">
+              <p>-<span>Dummy address,<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  dummy street,<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Dummy City
+                </span>
+              </p>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li>
+            <div class="child1 floatLeft">
+              <p>Phone Number</p>
+            </div>
+            <div class="child2 floatLeft">
+              <p>-<span>9961531199</span></p>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li>
+            <div class="child1 floatLeft">
+              <p>PAN Number</p>
+            </div>
+            <div class="child2 floatLeft">
+              <p>-<span>EY4E564</span></p>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <div class="c_branch_details_btn_bay">
+            <button ion-button class="c_line_btn">Loans</button>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="c_branch_overview" (click)="toggleGroup(1)" [ngClass]="{active: isGroupShown(1)}">
+          <div class="c_list_circle">
+            <img src="assets/img/pic2.png">
+          </div>
+          <div class="c_list_details relative top10">
+            <h5>Catharine Marloty</h5>
+            <h6 class="fontweight400">catherineluxa@gmail.com</h6>
+          </div>
+          <div class="child3 floatRight">
+            <div class="c_collpase_btn agent_collapse">
+
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="c_branch_details" *ngIf="isGroupShown(1)">
+          <li>
+            <div class="child1 floatLeft">
+              <p>Address</p>
+            </div>
+            <div class="child2 floatLeft">
+              <p>-<span>Dummy address,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dummy street,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dummy City
+              </span>
+              </p>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li>
+            <div class="child1 floatLeft">
+              <p>Phone Number</p>
+            </div>
+            <div class="child2 floatLeft">
+              <p>-<span>9961531199</span></p>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <li>
+            <div class="child1 floatLeft">
+              <p>PAN Number</p>
+            </div>
+            <div class="child2 floatLeft">
+              <p>-<span>EY4E564</span></p>
+            </div>
+            <div class="clear"></div>
+          </li>
+          <div class="c_branch_details_btn_bay">
+            <button ion-button class="c_line_btn">Loans</button>
+          </div>
+        </div>
+      </li>
+</ul>
+</div>
+
+</ion-content>

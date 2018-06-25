@@ -1,0 +1,126 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_menu floatLeft" menuToggle></button>
+    <div class="nav_header_title floatLeft">
+      <img src="assets/img/logo.png">
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="nav_bottom_header">
+    <div class="c_select_business themelight">
+      <select class="c_select_input">
+        <option disabled="true">Select Business</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+    </div>
+  </div>
+</ion-header>
+
+<ion-content padding class="theme_background">
+  <div class="c_home_main">
+    <div class="c_main_listing">
+      <ul>
+        <li (click)="myloan()">
+          <div class="c_inner_circle">
+            <img src="assets/img/my_loan.png">
+          </div>
+          <p>My loans</p>
+        </li>
+        <li (click)="profile()">
+          <div class="c_inner_circle">
+            <img src="assets/img/my_profile.png">
+          </div>
+          <p>My Profile</p>
+        </li>
+        <li (click)="settings()">
+          <div class="c_inner_circle">
+            <img src="assets/img/settings.png">
+          </div>
+          <p>Settings</p>
+        </li>
+        <li (click)="report()">
+          <div class="c_inner_circle">
+            <img src="assets/img/report.png">
+          </div>
+          <p>Report</p>
+        </li>
+        <li>
+          <div class="c_inner_circle">
+            <img src="assets/img/license.png">
+          </div>
+          <p>License</p>
+        </li>
+        <li (click)="collection()">
+          <div class="c_inner_circle">
+            <img src="assets/img/collections.png">
+          </div>
+          <p>Collections</p>
+        </li>
+        <li (click)="newloan()">
+          <div class="c_inner_circle">
+            <img src="assets/img/new_loan.png">
+          </div>
+          <p>New loans</p>
+        </li>
+
+        <li (click)="addCustomers()">
+          <div class="c_inner_circle">
+            <img src="assets/img/new_loan.png">
+          </div>
+          <p>Add Testing Customer</p>
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <div class="c_footer">
+    <ion-scroll scrollX="true" class="health130">
+    <ul style="width: 900px;" class="health130">
+      <li (click)="newbusiness()">
+        <img src="assets/img/tab_newbusines.png">
+        <p>New<br>
+        Business</p>
+      </li>
+      <li (click)="newline()">
+        <img src="assets/img/tab_newline.png">
+        <p>New<br>
+        Line</p>
+      </li>
+      <li (click)="newbranch()">
+        <img src="assets/img/tab_newbranch.png">
+        <p>New<br>
+        Branch</p>
+      </li>
+      <li (click)="expense()">
+        <img src="assets/img/tab_expense.png">
+        <p>Expense</p>
+      </li>
+      <li (click)="access()">
+        <img src="assets/img/tab_access.png">
+        <p>Access</p>
+      </li>
+      <li (click)="marksalary()">
+        <img src="assets/img/tab_salary.png">
+        <p>Mark<br>Salary</p>
+      </li>
+      <li (click)="chart()">
+        <img src="assets/img/tab_chart.png">
+        <p>ORG Chart</p>
+      </li>
+      <li (click)="track()">
+        <img src="assets/img/tab_track.png">
+        <p>Track</p>
+      </li>
+      <li (click)="topup()">
+        <img src="assets/img/tab_topup.png">
+        <p>Topup</p>
+      </li>
+    </ul>
+  </ion-scroll>
+  </div>
+</ion-footer>

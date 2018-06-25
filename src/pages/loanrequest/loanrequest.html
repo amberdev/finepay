@@ -1,0 +1,91 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_back floatLeft" (click)="goBack()"></button>
+    <div class="nav_header_title floatLeft">
+      Loan request by -<span> agent 41</span>
+    </div>
+    <button class="nav_btn floatRight">
+      help&nbsp;<strong>?</strong>
+    </button>
+    <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content padding class="theme_background">
+  <div class="c_request_wrap">
+    <div class="c_sign_form">
+      <div class="c_row">
+        <p>Loan Type<p>
+        <input class ="c_sign_input" placeholder="Daily">
+      </div>
+      <div class="c_row">
+        <p>Branch Name<p>
+        <input class ="c_sign_input" placeholder="MVP">
+      </div>
+      <div class="c_row">
+        <p>Line ID<p>
+        <input class ="c_sign_input" placeholder="TY46667">
+      </div>
+      <div class="c_row">
+        <p>Loan ID<p>
+        <input class ="c_sign_input" placeholder="LTOC3459087785">
+      </div>
+      <div class="c_row">
+        <p>Loan Amount<p>
+        <input class ="c_sign_input" placeholder="10,000">
+      </div>
+      <div class="c_row">
+        <p>Interest Rate<p>
+        <input class ="c_sign_input" placeholder="10%">
+      </div>
+      <div class="c_row">
+        <p>Down Payment<p>
+        <input class ="c_sign_input" placeholder="00000">
+      </div>
+      <div class="c_row">
+        <p>Payment Amount<p>
+        <input class ="c_sign_input" placeholder="9000">
+      </div>
+      <div class="c_row">
+        <p>Installment Amount<p>
+        <input class ="c_sign_input" placeholder="10,000">
+      </div>
+      <div class="c_row">
+        <p>Processing Fee<p>
+        <input class ="c_sign_input" placeholder="10,000">
+      </div>
+      <div class="c_row">
+        <p>No,Of Days<p>
+        <input class ="c_sign_input" placeholder="10 days">
+      </div>
+      <div class="c_row">
+        <p>Loan Status<p>
+        <input class ="c_sign_input" placeholder="Pending">
+      </div>
+      <div class="c_row">
+        <p>Settlement Amount<p>
+        <input class ="c_sign_input" placeholder="30000">
+      </div>
+      <div class="c_row">
+        <p>Settlement Reason<p>
+        <input class ="c_sign_input" placeholder="Need of Money">
+      </div>
+      <div class="c_row">
+        <p>Prev. Loan ID<p>
+        <input class ="c_sign_input" placeholder="3000">
+      </div>
+      <div class="c_row">
+        <p>Due Amount<p>
+        <input class ="c_sign_input" placeholder="2000">
+      </div>
+      <div class="c_row">
+        <ion-grid class="p0">
+          <ion-row class="p0">
+            <ion-col col-6><button ion-button class="c_daily_btn"><span><img src="assets/img/done.png"></span><span>Approve</span></button></ion-col>
+            <ion-col col-6><button ion-button class="c_deny_btn" (click)="deny()"><span><img src="assets/img/close.png"></span><span>Deny</span></button></ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,195 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_menu floatLeft" menuToggle></button>
+    <div class="nav_header_title floatLeft">
+      My loans
+    </div>
+    <button ion-button class="nav_btn floatRight" (click)="request()">
+      new&nbsp;<strong>+</strong>
+    </button>
+    <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content class="theme_background">
+  <div class="c_new_branch">
+    <ul>
+      <li>
+        <div class="c_branch_overview" (click)="toggleGroup(0)" [ngClass]="{active: isGroupShown(0)}">
+          <div class="child4 floatLeft borderside">
+		         <h5>ID23</h5>
+             <p><strong>10,000</strong></p>
+          </div>
+          <div class="child4 floatLeft">
+            <h6>Approval status</h6>
+            <p>June 11 2016</p>
+          </div>
+
+          <div class="child3 floatRight">
+            <div class="c_collpase_btn">
+
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="c_branch_details" *ngIf="isGroupShown(0)">
+          <div class="child1 floatLeft">
+            <p>Total Amount</p>
+            <p>Loan Type</p>
+            <p>Due Amount</p>
+            <p>Next Due on</p>
+            <p>Interest Rate</p>
+            <p>Issued by</p>
+          </div>
+          <div class="child2 floatLeft">
+            <p>-<span>100,000</span></p>
+            <p>-<span>Monthly</span></p>
+            <p>-<span>5648</span></p>
+            <p>-<span>10th July 2017</span></p>
+            <p>-<span>12%</span></p>
+            <p>-<span>Branch</span></p>
+            <p>-<span>Address</span></p>
+            <p>-<span>Email</span></p>
+            <p>-<span>Mobile Number</span></p>
+          </div>
+          <div class="clear"></div>
+          <div class="c_branch_details_btn_bay">
+            <button ion-button class="c_line_btn" (click)="loandetail()">Pay now</button>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="c_branch_overview" (click)="toggleGroup(1)" [ngClass]="{active: isGroupShown(1)}">
+          <div class="child4 floatLeft borderside">
+		         <h5>ID23</h5>
+             <p><strong>10,000</strong></p>
+          </div>
+          <div class="child4 floatLeft">
+            <h6>Approval status</h6>
+            <p>June 11 2016</p>
+          </div>
+
+          <div class="child3 floatRight">
+            <div class="c_collpase_btn">
+
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="c_branch_details" *ngIf="isGroupShown(1)">
+          <div class="child1 floatLeft">
+            <p>Total Amount</p>
+            <p>Loan Type</p>
+            <p>Due Amount</p>
+            <p>Next Due on</p>
+            <p>Interest Rate</p>
+            <p>Issued by</p>
+          </div>
+          <div class="child2 floatLeft">
+            <p>-<span>100,000</span></p>
+            <p>-<span>Monthly</span></p>
+            <p>-<span>5648</span></p>
+            <p>-<span>10th July 2017</span></p>
+            <p>-<span>12%</span></p>
+            <p>-<span>Branch</span></p>
+            <p>-<span>Address</span></p>
+            <p>-<span>Email</span></p>
+            <p>-<span>Mobile Number</span></p>
+          </div>
+          <div class="clear"></div>
+          <div class="c_branch_details_btn_bay">
+            <button ion-button class="c_line_btn" (click)="loandetail()">Pay now</button>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="c_branch_overview" (click)="toggleGroup(2)" [ngClass]="{active: isGroupShown(2)}">
+          <div class="child4 floatLeft borderside">
+		         <h5>ID23</h5>
+             <p><strong>10,000</strong></p>
+          </div>
+          <div class="child4 floatLeft">
+            <h6>Approval status</h6>
+            <p>June 11 2016</p>
+          </div>
+
+          <div class="child3 floatRight">
+            <div class="c_collpase_btn">
+
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="c_branch_details" *ngIf="isGroupShown(2)">
+          <div class="child1 floatLeft">
+            <p>Total Amount</p>
+            <p>Loan Type</p>
+            <p>Due Amount</p>
+            <p>Next Due on</p>
+            <p>Interest Rate</p>
+            <p>Issued by</p>
+          </div>
+          <div class="child2 floatLeft">
+            <p>-<span>100,000</span></p>
+            <p>-<span>Monthly</span></p>
+            <p>-<span>5648</span></p>
+            <p>-<span>10th July 2017</span></p>
+            <p>-<span>12%</span></p>
+            <p>-<span>Branch</span></p>
+            <p>-<span>Address</span></p>
+            <p>-<span>Email</span></p>
+            <p>-<span>Mobile Number</span></p>
+          </div>
+          <div class="clear"></div>
+          <div class="c_branch_details_btn_bay">
+            <button ion-button class="c_line_btn" (click)="loandetail()">Pay now</button>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="c_branch_overview" (click)="toggleGroup(3)" [ngClass]="{active: isGroupShown(3)}">
+          <div class="child4 floatLeft borderside">
+		         <h5>ID23</h5>
+             <p><strong>10,000</strong></p>
+          </div>
+          <div class="child4 floatLeft">
+            <h6>Approval status</h6>
+            <p>June 11 2016</p>
+          </div>
+
+          <div class="child3 floatRight">
+            <div class="c_collpase_btn">
+
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="c_branch_details" *ngIf="isGroupShown(3)">
+          <div class="child1 floatLeft">
+            <p>Total Amount</p>
+            <p>Loan Type</p>
+            <p>Due Amount</p>
+            <p>Next Due on</p>
+            <p>Interest Rate</p>
+            <p>Issued by</p>
+          </div>
+          <div class="child2 floatLeft ">
+            <p>-<span>100,000</span></p>
+            <p>-<span>Monthly</span></p>
+            <p>-<span>5648</span></p>
+            <p>-<span>10th July 2017</span></p>
+            <p>-<span>12%</span></p>
+            <p>-<span>Branch</span></p>
+            <p>-<span>Address</span></p>
+            <p>-<span>Email</span></p>
+            <p>-<span>Mobile Number</span></p>
+          </div>
+          <div class="clear"></div>
+          <div class="c_branch_details_btn_bay">
+            <button ion-button class="c_line_btn" (click)="loandetail()">Pay now</button>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</ion-content>

@@ -1,0 +1,91 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_menu floatLeft" menuToggle></button>
+    <div class="nav_header_title floatLeft">
+      Collections
+    </div>
+    <button ion-button class="nav_btn nav_filter floatRight" (click)="collectionfilter()">
+    </button>
+    <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content class="theme_background">
+        <div class="c_new_branch">
+          <ul>
+            <li>
+              <div class="c_branch_overview" (click)="toggleGroup(0)" [ngClass]="{active: isGroupShown(0)}">
+                <div class="c_list_circle">
+                  <img src="assets/img/pic1.png">
+                </div>
+                <div class="c_list_details relative top10 textLeft">
+                  <h5>Mishel Marcus</h5>
+                  <h6>UI34675</h6>
+                </div>
+                <div class="child3 floatRight">
+                  <div class="c_collpase_btn"></div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="c_collection_details" *ngIf="isGroupShown(0)">
+                <div class="c_collection_head">
+                  <li>Type</li>
+                  <li class="td_dark">Line</li>
+                  <li>Amount</li>
+                  <div class="clear"></div>
+                </div>
+                <div class="c_collection_data">
+                    <ion-row class="p0">
+                      <ion-col col-4>Daily</ion-col>
+                      <ion-col col-4>MVC</ion-col>
+                      <ion-col col-4>600</ion-col>
+                    </ion-row>
+                    <ion-row class="p0">
+                      <ion-col col-8><input class="c_collection_input" placeholder="Amount"></ion-col>
+                      <ion-col col-4>
+                        <span><img src="assets/img/tick.png"></span>
+                        <span><img src="assets/img/close_x.png"></span>
+                      </ion-col>
+                    </ion-row>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="c_branch_overview" (click)="toggleGroup(1)" [ngClass]="{active: isGroupShown(0)}">
+                <div class="c_list_circle">
+                  <img src="assets/img/pic4.png">
+                </div>
+                <div class="c_list_details relative top10 textLeft">
+                  <h5>Carla Cyprus</h5>
+                  <h6>YI3575</h6>
+                </div>
+                <div class="child3 floatRight">
+                  <div class="c_collpase_btn"></div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="c_collection_details" *ngIf="isGroupShown(1)">
+                <div class="c_collection_head">
+                  <li>Type</li>
+                  <li class="td_dark">Line</li>
+                  <li>Amount</li>
+                  <div class="clear"></div>
+                </div>
+                <div class="c_collection_data">
+                    <ion-row class="p0">
+                      <ion-col col-4>Daily</ion-col>
+                      <ion-col col-4>MVC</ion-col>
+                      <ion-col col-4>600</ion-col>
+                    </ion-row>
+                    <ion-row class="p0">
+                      <ion-col col-8><input class="c_collection_input" placeholder="Amount"></ion-col>
+                      <ion-col col-4>
+                        <span><img src="assets/img/tick.png"></span>
+                        <span><img src="assets/img/close_x.png"></span>
+                      </ion-col>
+                    </ion-row>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+</ion-content>

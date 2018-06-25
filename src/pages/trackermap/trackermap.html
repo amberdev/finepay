@@ -1,0 +1,21 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_back floatLeft" (click)="goBack()"></button>
+    <div class="nav_header_title floatLeft">
+      Track Map
+    </div>
+    <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content class="theme_background">
+  <div class="c_map">
+      <div #map id="map" style="height: 100%;"></div>
+  </div>
+  <div class="c_location_button_bay">
+    <div class="c_row">
+    <ion-row class="p0">
+      <ion-col col-12><button ion-button class="c_daily_btn"><span><img src="assets/img/get_direction.png"></span><span>Get Directions</span></button></ion-col>
+    </ion-row>
+    </div>
+  </div>
+</ion-content>

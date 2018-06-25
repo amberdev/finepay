@@ -1,0 +1,67 @@
+<ion-header class="nav_home_header themedark">
+  <div class="nav_top_header">
+    <button ion-button class="nav_btn nav_back floatLeft" (click)="goBack()"></button>
+    <div class="nav_header_title floatLeft">
+      Add Customer
+    </div>
+    <button ion-button class="nav_btn floatRight" (click)="customerList()">
+      List&nbsp;<strong>+</strong>
+    </button>
+    <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content padding class="theme_background">
+  <div class="c_sign_form">
+    <div class="c_row">
+      <input class ="c_sign_input" placeholder="Username" name="cust_usernamename" [(ngModel)]="cust_username">
+    </div>
+    <div class="c_row">
+      <input class ="c_sign_input" placeholder="First Name" name="cust_firstName" [(ngModel)]="cust_firstName">
+    </div>
+
+    <div class="c_row">
+      <input class ="c_sign_input" placeholder="Last Name" name="cust_lastName" [(ngModel)]="cust_lastName">
+    </div>
+
+
+   <!--  <div class="c_row">
+      <select class ="c_sign_input c_select_drop" name="lastName" [(ngModel)]="lastName">
+        <option>Loan Type</option>
+      </select>
+    </div> -->
+
+    <!-- <div class="c_row">
+      <select class ="c_sign_input c_select_drop">
+        <option>Gold in Grams</option>
+      </select>
+    </div> -->
+    <!-- <div class="c_row">
+      <ion-item class="c_sign_input c_calender" style="padding-left:0px;" >
+         <ion-datetime placeholder="Date of Birth"  displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+       </ion-item>
+    </div> -->
+    <!-- <div class="c_row">
+        <textarea class ="c_sign_input" style="height: 120px !important;" placeholder="Comment" rows="4">
+        </textarea>
+    </div> -->
+    <!-- <div class="c_row">
+    <ion-grid class="p0">
+      <ion-row class="p0">
+        <ion-col col-10 class="p0">
+          <input class ="c_sign_input" placeholder="Audio Record">
+        </ion-col>
+        <ion-col col-2 class="p0">
+          <div class="c_add_btn"><span>+</span></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </div> -->
+
+    <div class="c_row">
+    <ion-row class="p0">
+      <ion-col col-12><button ion-button class="c_daily_btn" (click)="addcustomersAPI()"><span><img src="assets/img/send.png"></span><span>Send a Request</span></button></ion-col>
+    </ion-row>
+    </div>
+  </div>
+
+</ion-content>

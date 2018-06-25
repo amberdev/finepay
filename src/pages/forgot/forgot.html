@@ -1,0 +1,43 @@
+<ion-content padding class="theme_background">
+  <div class="c_sign_wrap">
+    <div class="c_login_center">
+    <div class="c_reg_banner">
+      <img src="assets/img/register.png">
+      <h3>Forgot Password</h3>
+      <p>Please enter your Aadhar<br> number</p>
+    </div>
+    <div class="c_sign_form">
+      <div class="c_row">
+        <input class ="c_sign_input textCenter c_aadhar" placeholder="Aadhar Number">
+      </div>
+      <div class="c_row">
+        <ion-list radio-group>
+          <div class="c_gender">
+            <label>
+              <ion-radio ng-model="choice" ng-value="'A'"></ion-radio>
+              <strong>Pin</strong>
+            </label>
+          </div>
+          <div class="c_gender">
+            <label>
+              <ion-radio ng-model="choice" ng-value="'B'"></ion-radio>
+              <strong>Password</strong>
+            </label>
+          </div>
+          <div class="clear"></div>
+        </ion-list>
+      </div>
+      <div class="c_row">
+        <button ion-button class="c_register_button" (click)="login()">Reset</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <div class="c_row textCenter">
+    <div class="c_check">
+      <p>Back to<strong class="textThemedblue" (click)="login()">&nbsp;Login</strong></p>
+    </div>
+  </div>
+</ion-footer>
